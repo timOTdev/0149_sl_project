@@ -6,9 +6,7 @@ class App extends Component {
   render() {
     return (
       <Div>
-        {/* <Div1> */}
         <WelcomePage />
-        {/* </Div1> */}
         <GlobalStyle />
       </Div>
     )
