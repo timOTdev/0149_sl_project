@@ -40,50 +40,45 @@ const Form = () => {
   // RETURN
   return (
     <Section>
-      <form onSubmit={handleUserSubmit}>
-        <label htmlFor="firstName">FIRST NAME
-          <input
-            name="firstName"
-            type="text"
-            value={user.firstName}
-            onChange={handleUserChange}
-            required
-          />
-        </label>
+      <Form1 onSubmit={handleUserSubmit}>
+        <Label htmlFor="firstName">FIRST NAME</Label>
+        <Input
+          name="firstName"
+          type="text"
+          value={user.firstName}
+          onChange={handleUserChange}
+          required
+        />
 
-        <label htmlFor="">LAST NAME
-          <input
-            name="lastName"
-            type="text"
-            value={user.lastName}
-            onChange={handleUserChange}
-            required
-          />
-        </label>
+        <Label htmlFor="lastName">LAST NAME</Label>
+        <Input
+          name="lastName"
+          type="text"
+          value={user.lastName}
+          onChange={handleUserChange}
+          required
+        />
 
-        <label htmlFor="">ADDRESS
-          <input
-            name="address1"
-            type="text"
-            value={user.address1}
-            onChange={handleUserChange}
-            required
-          />
-        </label>
+        <Label htmlFor="address1">ADDRESS</Label>
+        <Input
+          name="address1"
+          type="text"
+          value={user.address1}
+          onChange={handleUserChange}
+          required
+        />
 
-        <label htmlFor="">ADDRESS 2 (OPTIONAL)
-          <input
-            name="address2"
-            type="text"
-            value={user.address2}
-            onChange={handleUserChange}
-          />
-        </label>
-        <button type="submit">
-          Next
-          <Arrow />
-        </button>
-      </form>
+        <Label htmlFor="address2">ADDRESS 2 (OPTIONAL)</Label>
+        <Input
+          name="address2"
+          type="text"
+          value={user.address2}
+          onChange={handleUserChange}
+        />
+        <Button type="submit">
+          Next &nbsp; <Arrow />
+        </Button>
+      </Form1>
     </Section >
   )
 }
@@ -92,6 +87,35 @@ const Section = styled.section`
   min-width: 32%;
   height: 100vh;
   background: #FFF;
+`
+const Form1 = styled.form`
+  margin-top: 111px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+`
+const Label = styled.label`
+  color: #666666;
+  font-family: 'Merriweather', 'serif';
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 8px;
+`
+const Input = styled.input`
+  height: 48px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+`
+const Button = styled.button`
+  background: #FFAB44;
+  color: white;
+  border-radius: 6px;
+  height: 48px;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.6rem;
+  width: 106px;
+  margin-top: 24px;
 `
 
 export default Form
