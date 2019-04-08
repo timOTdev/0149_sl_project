@@ -12,6 +12,9 @@ const WelcomePage = () => (
 const Div = styled.div`
   display: flex;
   margin: 0 auto;
+  @media (max-width: 320px) {
+    flex-direction: column;
+  }
 `
 
 export default WelcomePage

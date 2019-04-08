@@ -87,6 +87,11 @@ const Section = styled.section`
   min-width: 32%;
   height: 100vh;
   background: #FFF;
+  @media (max-width: 320px) {
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
 `
 const Form1 = styled.form`
   margin-top: 111px;
