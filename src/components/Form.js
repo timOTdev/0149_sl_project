@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
+import { ReactComponent as Arrow } from '../images/White_Arrow.svg'
 
 const Form = () => {
   // HOOKS
@@ -37,7 +39,7 @@ const Form = () => {
 
   // RETURN
   return (
-    < section >
+    <Section>
       <form onSubmit={handleUserSubmit}>
         <label htmlFor="firstName">FIRST NAME
           <input
@@ -77,10 +79,19 @@ const Form = () => {
             onChange={handleUserChange}
           />
         </label>
-        <button type="submit">Next ➔</button>
+        <button type="submit">
+          Next
+          <Arrow />
+        </button>
       </form>
-    </section >
+    </Section >
   )
 }
+
+const Section = styled.section`
+  min-width: 32%;
+  height: 100vh;
+  background: #FFF;
+`
 
 export default Form

@@ -1,12 +1,17 @@
 import React from 'react'
 import { Greeting, Form } from '../components/'
+import styled from 'styled-components'
 
 const WelcomePage = () => (
-  <div>
-    <h1>Welcome Page</h1>
+  <Div>
     <Greeting />
     <Form />
-  </div>
+  </Div>
 )
+
+const Div = styled.div`
+  display: flex;
+  margin: 0 auto;
+`
 
 export default WelcomePage
