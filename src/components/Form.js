@@ -99,6 +99,11 @@ const Form1 = styled.form`
   display: flex;
   flex-direction: column;
   width: 376px;
+  @media (max-width: 320px) {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 15px;
+  }
 `
 const Label = styled.label`
   color: #666666;
@@ -127,6 +132,9 @@ const Input = styled.input`
     background: #FFFFFF;
     border: 1px solid #E70000;
   }
+  @media (max-width: 320px) {
+    width: 90%;
+  }
 `
 const Button = styled.button`
   background: #FFAB44;
@@ -138,6 +146,9 @@ const Button = styled.button`
   width: 106px;
   margin-top: 24px;
   border: none;
+  @media (max-width: 320px) {
+    width: 90%;
+  }
 `
 const Arrow = styled(ReactComponent)`
   margin-left: 8px;

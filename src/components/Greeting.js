@@ -18,7 +18,7 @@ const Section = styled.section`
   padding-left: 170px;
   color: #FFFFFF;
   @media (max-width: 320px) {
-    min-width: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     padding-left: 16px;
