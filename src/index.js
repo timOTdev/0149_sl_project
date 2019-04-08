@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Merriweather:400', 'serif', 'Roboto:700', 'sans-serif']
+    families: ['Merriweather:400', 'serif', 'Roboto:400,700', 'sans-serif']
   }
 });
 

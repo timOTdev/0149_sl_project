@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { ReactComponent as Arrow } from '../images/White_Arrow.svg'
+import { ReactComponent } from '../images/White_Arrow.svg'
 
 const Form = () => {
   // HOOKS
@@ -76,7 +76,7 @@ const Form = () => {
           onChange={handleUserChange}
         />
         <Button type="submit">
-          Next &nbsp; <Arrow />
+          Next<Arrow />
         </Button>
       </Form1>
     </Section >
@@ -106,6 +106,22 @@ const Input = styled.input`
   height: 48px;
   border-radius: 6px;
   margin-bottom: 24px;
+  padding-left: 16px;
+  outline: none;
+  background: #F7F7F7;
+  border: 1px solid #EAEAEA;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666666;
+  &:focus {
+    background: #FFFFFF;
+    border: 1px solid #00ADEE;
+  }
+  &:invalid {
+    background: #FFFFFF;
+    border: 1px solid #E70000;
+  }
 `
 const Button = styled.button`
   background: #FFAB44;
@@ -116,6 +132,12 @@ const Button = styled.button`
   font-size: 1.6rem;
   width: 106px;
   margin-top: 24px;
+  border: none;
+`
+const Arrow = styled(ReactComponent)`
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
 `
 
 export default Form
