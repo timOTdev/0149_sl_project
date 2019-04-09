@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
 import { WelcomePage } from './pages'
-import styled, { createGlobalStyle } from 'styled-components'
-
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { theme } from './theme'
 class App extends Component {
   render() {
     return (
-      <Div>
-        <WelcomePage />
-        <GlobalStyle />
-      </Div>
+      <ThemeProvider theme={theme}>
+        <Div>
+          <WelcomePage />
+          <GlobalStyle />
+        </Div>
+      </ThemeProvider>
     )
   }
 }

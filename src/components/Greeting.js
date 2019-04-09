@@ -11,12 +11,12 @@ const Greeting = () => (
 )
 
 const Section = styled.section`
-  background: #585858;
+  background: ${props => props.theme.metallic}
   min-width: 57%;
   height: 100vh;
   padding-left: 170px;
   text-align: left;
-  color: #FFFFFF;
+  color: ${props => props.theme.white};
   @media (max-width: 320px) {
     width: 100%;
     height: auto;
@@ -34,15 +34,15 @@ const Logo1 = styled(ReactComponent)`
 const H1 = styled.h1`
   margin-top: 40px;
   margin-bottom: 8px;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: ${props => props.theme.roboto};
   @media (max-width: 320px) {
     margin-top: 32px;
     font-size: 2.4rem;
   }
 `
 const P = styled.p`
-  font-family: 'Merriweather', 'serif';
-  color: #EAEAEA;
+  font-family: ${props => props.theme.merriweather};;
+  color: ${props => props.theme.silver};;
   @media (max-width: 320px) {
     width: 85%;
     line-height: 1.5;

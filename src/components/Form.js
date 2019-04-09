@@ -92,7 +92,7 @@ const Form = () => {
 const Section = styled.section`
   min-width: 32%;
   height: 100vh;
-  background: #FFF;
+  background: ${props => props.theme.white};
   @media (max-width: 320px) {
     min-width: 100%;
     padding: 0;
@@ -114,39 +114,39 @@ const Form1 = styled.form`
 const Label = styled.label`
   margin-bottom: 8px;
   text-align: left;
-  font-family: 'Merriweather', 'serif';
+  font-family: ${props => props.theme.merriweather};
   font-size: 1.2rem;
-  color: #666666;
-`
+  color: ${props => props.theme.slate};
+  `
 const Input = styled.input`
   height: 48px;
   margin-bottom: 24px;
   padding-left: 16px;
   outline: none;
-  background: #F7F7F7;
-  border: 1px solid #EAEAEA;
+  background: ${props => props.theme.shale};
+  border: 1px solid ${props => props.theme.silver};
   border-radius: 6px;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: ${props => props.theme.roboto};
   font-weight: 400;
-  color: #666666;
+  color: ${props => props.theme.slate};
   &:focus {
-    background: #FFFFFF;
-    border: 1px solid #00ADEE;
+    background: ${props => props.theme.white};
+    border: 1px solid ${props => props.theme.skyblue};
   }
   &:invalid {
-    background: #FFFFFF;
-    border: 1px solid #E70000;
+    background: ${props => props.theme.white};
+    border: 1px solid ${props => props.theme.cherry};
   }
   @media (max-width: 320px) {
     width: 90%;
   }
 `
 const Button = styled.button`
-  background: #FFAB44;
+  background: ${props => props.theme.tangerine};
   width: 106px;
   height: 48px;
   margin-top: 24px;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: ${props => props.theme.roboto};
   font-size: 1.6rem;
   color: white;
   border: none;
