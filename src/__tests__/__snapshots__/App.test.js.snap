@@ -10,16 +10,19 @@ exports[`-- App.js -- renders 1`] = `
     >
       <svg
         class="sc-bwzfXH IdIQf"
+        data-testid="svg-element"
       >
         GiantRobotLTD_Logo.svg
       </svg>
       <h1
         class="sc-htpNat kucMBk"
+        data-testid="h1tag"
       >
         Welcome
       </h1>
       <p
         class="sc-bxivhb iEpyJc"
+        data-testid="ptag"
       >
         Please tell us a bit about yourself to get started.
       </p>
@@ -32,12 +35,14 @@ exports[`-- App.js -- renders 1`] = `
       >
         <label
           class="sc-bZQynM bokBht"
+          data-testid="label1"
           for="firstName"
         >
           FIRST NAME
         </label>
         <input
           class="sc-gzVnrw csSnzc"
+          data-testid="input1"
           name="firstName"
           required=""
           type="text"
@@ -45,12 +50,14 @@ exports[`-- App.js -- renders 1`] = `
         />
         <label
           class="sc-bZQynM bokBht"
+          data-testid="label2"
           for="lastName"
         >
           LAST NAME
         </label>
         <input
           class="sc-gzVnrw csSnzc"
+          data-testid="input2"
           name="lastName"
           required=""
           type="text"
@@ -58,12 +65,14 @@ exports[`-- App.js -- renders 1`] = `
         />
         <label
           class="sc-bZQynM bokBht"
+          data-testid="label3"
           for="address1"
         >
           ADDRESS
         </label>
         <input
           class="sc-gzVnrw csSnzc"
+          data-testid="input3"
           name="address1"
           required=""
           type="text"
@@ -71,6 +80,7 @@ exports[`-- App.js -- renders 1`] = `
         />
         <label
           class="sc-bZQynM bokBht"
+          data-testid="label4"
           for="address2"
         >
           ADDRESS 2 (OPTIONAL)
@@ -83,6 +93,7 @@ exports[`-- App.js -- renders 1`] = `
         />
         <button
           class="sc-htoDjs iSsMJH"
+          data-testid="button"
           type="submit"
         >
           Next

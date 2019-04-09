@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-- Form.js -- renders 1`] = `
+<div>
+  <section
+    class="sc-ifAKCX cinLdT"
+  >
+    <form
+      class="sc-EHOje emqSHC"
+    >
+      <label
+        class="sc-bZQynM bokBht"
+        data-testid="label1"
+        for="firstName"
+      >
+        FIRST NAME
+      </label>
+      <input
+        class="sc-gzVnrw csSnzc"
+        data-testid="input1"
+        name="firstName"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        class="sc-bZQynM bokBht"
+        data-testid="label2"
+        for="lastName"
+      >
+        LAST NAME
+      </label>
+      <input
+        class="sc-gzVnrw csSnzc"
+        data-testid="input2"
+        name="lastName"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        class="sc-bZQynM bokBht"
+        data-testid="label3"
+        for="address1"
+      >
+        ADDRESS
+      </label>
+      <input
+        class="sc-gzVnrw csSnzc"
+        data-testid="input3"
+        name="address1"
+        required=""
+        type="text"
+        value=""
+      />
+      <label
+        class="sc-bZQynM bokBht"
+        data-testid="label4"
+        for="address2"
+      >
+        ADDRESS 2 (OPTIONAL)
+      </label>
+      <input
+        class="sc-gzVnrw csSnzc"
+        name="address2"
+        type="text"
+        value=""
+      />
+      <button
+        class="sc-htoDjs iSsMJH"
+        data-testid="button"
+        type="submit"
+      >
+        Next
+        <svg
+          class="sc-dnqmqq EgsWe"
+        >
+          White_Arrow.svg
+        </svg>
+      </button>
+    </form>
+  </section>
+</div>
+`;

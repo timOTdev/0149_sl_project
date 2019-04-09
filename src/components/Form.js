@@ -41,41 +41,45 @@ const Form = () => {
   return (
     <Section>
       <Form1 onSubmit={handleUserSubmit}>
-        <Label htmlFor="firstName">FIRST NAME</Label>
+        <Label htmlFor="firstName" data-testid="label1">FIRST NAME</Label>
         <Input
           name="firstName"
           type="text"
           value={user.firstName}
           onChange={handleUserChange}
           required
+          data-testid="input1"
         />
 
-        <Label htmlFor="lastName">LAST NAME</Label>
+        <Label htmlFor="lastName" data-testid="label2">LAST NAME</Label>
         <Input
           name="lastName"
           type="text"
           value={user.lastName}
           onChange={handleUserChange}
           required
+          data-testid="input2"
         />
 
-        <Label htmlFor="address1">ADDRESS</Label>
+        <Label htmlFor="address1" data-testid="label3">ADDRESS</Label>
         <Input
           name="address1"
           type="text"
           value={user.address1}
           onChange={handleUserChange}
           required
+          data-testid="input3"
         />
 
-        <Label htmlFor="address2">ADDRESS 2 (OPTIONAL)</Label>
+        <Label htmlFor="address2" data-testid="label4">ADDRESS 2 (OPTIONAL)</Label>
         <Input
           name="address2"
           type="text"
           value={user.address2}
           onChange={handleUserChange}
         />
-        <Button type="submit">
+        <Button type="submit"
+          data-testid="button">
           Next<Arrow />
         </Button>
       </Form1>
