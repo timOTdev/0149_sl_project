@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-- App.js -- renders 1`] = `
+<div>
+  <div
+    class="sc-iwsKbI hZkWeQ"
+  >
+    <section
+      class="sc-bdVaJa fdQjbU"
+    >
+      <svg
+        class="sc-bwzfXH IdIQf"
+      >
+        GiantRobotLTD_Logo.svg
+      </svg>
+      <h1
+        class="sc-htpNat kucMBk"
+      >
+        Welcome
+      </h1>
+      <p
+        class="sc-bxivhb iEpyJc"
+      >
+        Please tell us a bit about yourself to get started.
+      </p>
+    </section>
+    <section
+      class="sc-ifAKCX cinLdT"
+    >
+      <form
+        class="sc-EHOje emqSHC"
+      >
+        <label
+          class="sc-bZQynM bokBht"
+          for="firstName"
+        >
+          FIRST NAME
+        </label>
+        <input
+          class="sc-gzVnrw csSnzc"
+          name="firstName"
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          class="sc-bZQynM bokBht"
+          for="lastName"
+        >
+          LAST NAME
+        </label>
+        <input
+          class="sc-gzVnrw csSnzc"
+          name="lastName"
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          class="sc-bZQynM bokBht"
+          for="address1"
+        >
+          ADDRESS
+        </label>
+        <input
+          class="sc-gzVnrw csSnzc"
+          name="address1"
+          required=""
+          type="text"
+          value=""
+        />
+        <label
+          class="sc-bZQynM bokBht"
+          for="address2"
+        >
+          ADDRESS 2 (OPTIONAL)
+        </label>
+        <input
+          class="sc-gzVnrw csSnzc"
+          name="address2"
+          type="text"
+          value=""
+        />
+        <button
+          class="sc-htoDjs iSsMJH"
+          type="submit"
+        >
+          Next
+          <svg
+            class="sc-dnqmqq EgsWe"
+          >
+            White_Arrow.svg
+          </svg>
+        </button>
+      </form>
+    </section>
+  </div>
+</div>
+`;
