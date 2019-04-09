@@ -4,9 +4,9 @@ import { ReactComponent } from '../images/GiantRobotLTD_Logo.svg'
 
 const Greeting = () => (
   <Section>
-    <Logo1 />
-    <H1>Welcome</H1>
-    <P>Please tell us a bit about yourself to get started.</P>
+    <Logo1 data-testid="svg-element" />
+    <H1 data-testid="h1tag">Welcome</H1>
+    <P data-testid="ptag">Please tell us a bit about yourself to get started.</P>
   </Section>
 )
 
