@@ -35,16 +35,13 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size: 2rem;
   }
-  p, a {
-    font-size: 1.6rem;
+  p, a, input {
+    font-size: 1.4rem;
   }
 `
 const Div = styled.div`
   margin: 0 auto;
   max-width: 1240px;
-  /* @media (max-width: 320px) {
-    width: 320px;
-  } */
 `
 
 export default App

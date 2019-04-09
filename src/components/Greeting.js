@@ -14,31 +14,27 @@ const Section = styled.section`
   background: #585858;
   min-width: 57%;
   height: 100vh;
-  text-align: left;
   padding-left: 170px;
+  text-align: left;
   color: #FFFFFF;
   @media (max-width: 320px) {
     width: 100%;
-    padding: 0;
-    margin: 0;
-    padding-left: 16px;
     height: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
     padding-bottom: 22px;
   }
 `
 const Logo1 = styled(ReactComponent)`
-  margin-top: 32px;
   width: 177px;
   height: 26px;
-  @media (max-width: 320px) {
-    margin:
-  }
+  margin-top: 32px;
 `
 const H1 = styled.h1`
   margin-top: 40px;
-  font-family: 'Roboto', 'sans-serif';
-  font-size: 3.2rem;
   margin-bottom: 8px;
+  font-family: 'Roboto', 'sans-serif';
   @media (max-width: 320px) {
     margin-top: 32px;
     font-size: 2.4rem;
@@ -46,10 +42,8 @@ const H1 = styled.h1`
 `
 const P = styled.p`
   font-family: 'Merriweather', 'serif';
-  font-size: 1.4rem;
   color: #EAEAEA;
   @media (max-width: 320px) {
-    font-size: 1.4rem;
     width: 85%;
     line-height: 1.5;
   }

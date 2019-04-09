@@ -12,6 +12,7 @@ const Form = () => {
   })
 
   // METHODS
+  // updates hook from user input on form
   const handleUserChange = (e) => {
     e.preventDefault();
     setUser({
@@ -20,6 +21,7 @@ const Form = () => {
     })
   }
 
+  // sends an alert with user hook info and clears the user hook
   const handleUserSubmit = (e) => {
     e.preventDefault();
     const { firstName, lastName, address1, address2 } = user
@@ -98,11 +100,11 @@ const Section = styled.section`
   }
 `
 const Form1 = styled.form`
-  margin-top: 111px;
-  margin-left: 24px;
   display: flex;
   flex-direction: column;
   width: 376px;
+  margin-top: 111px;
+  margin-left: 24px;
   @media (max-width: 320px) {
     width: 100%;
     margin-top: 30px;
@@ -110,22 +112,21 @@ const Form1 = styled.form`
   }
 `
 const Label = styled.label`
-  color: #666666;
+  margin-bottom: 8px;
+  text-align: left;
   font-family: 'Merriweather', 'serif';
   font-size: 1.2rem;
-  text-align: left;
-  margin-bottom: 8px;
+  color: #666666;
 `
 const Input = styled.input`
   height: 48px;
-  border-radius: 6px;
   margin-bottom: 24px;
   padding-left: 16px;
   outline: none;
   background: #F7F7F7;
   border: 1px solid #EAEAEA;
+  border-radius: 6px;
   font-family: 'Roboto', 'sans-serif';
-  font-size: 1.4rem;
   font-weight: 400;
   color: #666666;
   &:focus {
@@ -142,22 +143,22 @@ const Input = styled.input`
 `
 const Button = styled.button`
   background: #FFAB44;
-  color: white;
-  border-radius: 6px;
+  width: 106px;
   height: 48px;
+  margin-top: 24px;
   font-family: 'Roboto', 'sans-serif';
   font-size: 1.6rem;
-  width: 106px;
-  margin-top: 24px;
+  color: white;
   border: none;
+  border-radius: 6px;
   @media (max-width: 320px) {
     width: 90%;
   }
 `
 const Arrow = styled(ReactComponent)`
-  margin-left: 8px;
   width: 10px;
   height: 10px;
+  margin-left: 8px;
 `
 
 export default Form
