@@ -73,12 +73,13 @@ const Form = () => {
           data-testid="input3"
         />
 
-        <Label htmlFor="address2" data-testid="label4">ADDRESS 2 (OPTIONAL)</Label>
-        <Input
+        <Label htmlFor="address2" data-testid="label4" invalid>ADDRESS 2 (OPTIONAL)</Label>
+        <Input2
           name="address2"
           type="text"
           value={user.address2}
           onChange={handleUserChange}
+          placeholder=" "
         />
         <Button type="submit"
           data-testid="button">
@@ -123,19 +124,47 @@ const Input = styled.input`
   margin-bottom: 24px;
   padding-left: 16px;
   outline: none;
-  background: ${props => props.theme.shale};
   border: 1px solid ${props => props.theme.silver};
   border-radius: 6px;
   font-family: ${props => props.theme.roboto};
   font-weight: 400;
-  color: ${props => props.theme.slate};
+  &:required {
+    background: ${props => props.theme.shale};
+    color: ${props => props.theme.slate};
+  }
+  &:active, &:valid {
+    background: ${props => props.theme.white};
+    border: 1px solid ${props => props.theme.skyblue};
+  }
+  /* RED HIGHLIGHT
+  &:invalid {
+    background: ${props => props.theme.white};
+    border: 1px solid ${props => props.theme.cherry};
+  } */
+  @media (max-width: 320px) {
+    width: 90%;
+  }
+`
+const Input2 = styled.input`
+  height: 48px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  outline: none;
+  border: 1px solid ${props => props.theme.silver};
+  border-radius: 6px;
+  font-family: ${props => props.theme.roboto};
+  font-weight: 400;
+  &:optional {
+    color: ${props => props.theme.slate};
+    background: ${props => props.theme.shale};
+  }
   &:focus {
     background: ${props => props.theme.white};
     border: 1px solid ${props => props.theme.skyblue};
   }
-  &:invalid {
+  &:not(:placeholder-shown) {
     background: ${props => props.theme.white};
-    border: 1px solid ${props => props.theme.cherry};
+    border: 1px solid ${props => props.theme.skyblue};
   }
   @media (max-width: 320px) {
     width: 90%;
@@ -148,7 +177,7 @@ const Button = styled.button`
   margin-top: 24px;
   font-family: ${props => props.theme.roboto};
   font-size: 1.6rem;
-  color: white;
+  color: ${props => props.theme.white};
   border: none;
   border-radius: 6px;
   @media (max-width: 320px) {

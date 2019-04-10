@@ -30,22 +30,28 @@ const Logo1 = styled(ReactComponent)`
   width: 177px;
   height: 26px;
   margin-top: 32px;
+  margin-bottom: 15px;
+  @media (max-width: 320px) {
+    margin-bottom: 32px;
+  }
 `
 const H1 = styled.h1`
-  margin-top: 40px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-family: ${props => props.theme.roboto};
+  color: ${props => props.theme.white};
   @media (max-width: 320px) {
-    margin-top: 32px;
+    margin-bottom: 0;
+    margin-top: 2px;
     font-size: 2.4rem;
   }
 `
 const P = styled.p`
-  font-family: ${props => props.theme.merriweather};;
-  color: ${props => props.theme.silver};;
+  font-family: ${props => props.theme.merriweather};
+  color: ${props => props.theme.silver};
   @media (max-width: 320px) {
     width: 85%;
-    line-height: 1.5;
+    line-height: 2;
+    margin-top: 4px;
   }
 `
 
