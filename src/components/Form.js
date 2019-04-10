@@ -136,11 +136,11 @@ const Input = styled.input`
     background: ${props => props.theme.white};
     border: 1px solid ${props => props.theme.skyblue};
   }
-  /* RED HIGHLIGHT
+  /* RED HIGHLIGHT */
   &:invalid {
     background: ${props => props.theme.white};
     border: 1px solid ${props => props.theme.cherry};
-  } */
+  }
   @media (max-width: 320px) {
     width: 90%;
   }
