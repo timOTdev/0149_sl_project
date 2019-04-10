@@ -3,20 +3,20 @@
 exports[`-- Form.js -- renders 1`] = `
 <div>
   <section
-    class="sc-ifAKCX cinLdT"
+    class="sc-ifAKCX PvtxZ"
   >
     <form
-      class="sc-EHOje emqSHC"
+      class="sc-EHOje KQgPY"
     >
       <label
-        class="sc-bZQynM bokBht"
+        class="sc-bZQynM hLMmSv"
         data-testid="label1"
         for="firstName"
       >
         FIRST NAME
       </label>
       <input
-        class="sc-gzVnrw csSnzc"
+        class="sc-gzVnrw HcCoo"
         data-testid="input1"
         name="firstName"
         required=""
@@ -24,14 +24,14 @@ exports[`-- Form.js -- renders 1`] = `
         value=""
       />
       <label
-        class="sc-bZQynM bokBht"
+        class="sc-bZQynM hLMmSv"
         data-testid="label2"
         for="lastName"
       >
         LAST NAME
       </label>
       <input
-        class="sc-gzVnrw csSnzc"
+        class="sc-gzVnrw HcCoo"
         data-testid="input2"
         name="lastName"
         required=""
@@ -39,14 +39,14 @@ exports[`-- Form.js -- renders 1`] = `
         value=""
       />
       <label
-        class="sc-bZQynM bokBht"
+        class="sc-bZQynM hLMmSv"
         data-testid="label3"
         for="address1"
       >
         ADDRESS
       </label>
       <input
-        class="sc-gzVnrw csSnzc"
+        class="sc-gzVnrw HcCoo"
         data-testid="input3"
         name="address1"
         required=""
@@ -54,26 +54,27 @@ exports[`-- Form.js -- renders 1`] = `
         value=""
       />
       <label
-        class="sc-bZQynM bokBht"
+        class="sc-bZQynM hLMmSv"
         data-testid="label4"
         for="address2"
       >
         ADDRESS 2 (OPTIONAL)
       </label>
       <input
-        class="sc-gzVnrw csSnzc"
+        class="sc-htoDjs gehhcT"
         name="address2"
+        placeholder=" "
         type="text"
         value=""
       />
       <button
-        class="sc-htoDjs iSsMJH"
+        class="sc-dnqmqq bpbtYo"
         data-testid="button"
         type="submit"
       >
         Next
         <svg
-          class="sc-dnqmqq EgsWe"
+          class="sc-iwsKbI eXVGwH"
         >
           White_Arrow.svg
         </svg>

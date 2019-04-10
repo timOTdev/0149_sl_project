@@ -3,22 +3,22 @@
 exports[`-- Greeting.js -- renders 1`] = `
 <div>
   <section
-    class="sc-bdVaJa fdQjbU"
+    class="sc-bdVaJa usAgg"
   >
     <svg
-      class="sc-bwzfXH IdIQf"
+      class="sc-bwzfXH dmdIqG"
       data-testid="svg-element"
     >
       GiantRobotLTD_Logo.svg
     </svg>
     <h1
-      class="sc-htpNat kucMBk"
+      class="sc-htpNat iuIPbH"
       data-testid="h1tag"
     >
       Welcome
     </h1>
     <p
-      class="sc-bxivhb iEpyJc"
+      class="sc-bxivhb kfOGlP"
       data-testid="ptag"
     >
       Please tell us a bit about yourself to get started.

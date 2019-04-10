@@ -11,11 +11,10 @@
 2) Click on `Clone or download` and copy the link
 3) Open your terminal and navigate to direction you'd like to clone the repo to
 4) Clone locally by typing `git clone https://github.com/timh1203/slproject`
-5) Install dependencies using `yarn install`
-6) Run tests using `yarn test`
-7) Start the app with `yarn start`
-8) Navigate to app in browser at address `http://localhost:3000/`
-9) Enjoy
+5) Open your new directory and install dependencies using `yarn install`
+6) Run tests using `yarn test --verbose`, one might have to run tests again by pushing `a`
+7) Start the app with `yarn start` and it should automatically open the browser (if not, open `http://localhost:3000/`)
+8) Enjoy!
 
 ## Discussions 💻
 ---
