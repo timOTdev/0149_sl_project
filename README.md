@@ -1,12 +1,15 @@
-# SL Project
+# 0149_sl_project
 
 ## By Timothy Hoang
+
 - [Portfolio](https://timothyhoang.dev/)
 - [Github](https://github.com/timh1203)
 - [LinkedIn](https://www.linkedin.com/in/timothyhoang)
 
 ## Instructions 📖
+
 ---
+
 1) Navigate to [repo](https://github.com/timh1203/slproject)
 2) Click on `Clone or download` and copy the link
 3) Open your terminal and navigate to direction you'd like to clone the repo to
@@ -17,8 +20,10 @@
 8) Enjoy!
 
 ## Discussions 💻
+
 ---
-- I used [create-react-app](https://github.com/facebook/create-react-app) to bootstrap this project and the following technologies: 
+
+- I used [create-react-app](https://github.com/facebook/create-react-app) to bootstrap this project and the following technologies:
 - HTML
 - CSS
 - [React](https://reactjs.org/)
@@ -29,12 +34,15 @@
 - [webfontloader](https://github.com/typekit/webfontloader)
 
 ## Requirements ✏️
+
 ---
+
 - The requirement was to create a simple form in React with any tools, packages, or resources
 - The form was has both a desktop and mobile view
 - Mocks, images, and assets were provided
 
 - **To dos**
+
 1) Create 4 input fields ✅
 2) Create submit type button ✅
 3) All fields are required except 'address 2' ✅
